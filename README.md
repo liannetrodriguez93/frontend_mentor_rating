@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-!['mobile view'](../images/qr_code_mobile.png)
-!['desktop view'](../images/qr_code_desktop.png)
+!['mobile view'](./images/qr_code_mobile.png)
+!['desktop view'](./images/qr_code_desktop.png)
 
 ### Links
 
