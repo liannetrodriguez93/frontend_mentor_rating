@@ -1,0 +1,144 @@
+@import 'mixins';
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    @include flex-center();
+    background-color: #141519;
+    font-family: $fonts;
+}
+
+.card {
+    width: 90%;
+    min-width: 280px;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(35deg, #171E28, 50%, #1E252F);
+}
+
+.card .start-icon {
+    @include circule-centered();
+    color: $orange;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text h1{
+    color: white;
+    margin-bottom: 15px;
+    font-size: $header-font-size;
+    cursor: default;
+}
+
+.card-text p {
+    color: #5D646E;
+    font-weight: normal;
+    font-size: $subtitle-font-size;
+    cursor: default;
+}
+
+.card .card-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.card .card-rating span{
+    @include circule-centered(40px);
+    color: #5D646E;
+    font-size: 1.3rem;
+}
+
+.card-rating .active {
+    background-color: #7C8898 !important;
+}
+
+.card-rating span:hover {
+    opacity: 1;
+    background-color: $orange;
+    color: white;
+}
+
+.card .card-button {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.card-button button {
+    border: none;
+    background-color: $orange;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.card-button button:hover {
+    background-color: white;
+    color: $orange;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-image {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.card-image .thank-you {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url('../images/illustration-thank-you.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.card-image .badget {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    background-color: #272E38;
+    color: #b96b34;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text .title, .subtitle {
+    display: flex;
+    align-self: center;
+}
+
+.card-text .subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+}
