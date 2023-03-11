@@ -30,7 +30,7 @@ main .thank-you-section {
   margin: 0 auto;
   border-radius: 15px;
   padding: 25px;
-  background: linear-gradient(35deg, #171E28, 50%, #1E252F);
+  background: linear-gradient(35deg, #171e28, 50%, #1e252f);
 }
 
 .card .start-icon {
@@ -63,7 +63,7 @@ main .thank-you-section {
 }
 
 .card-text p {
-  color: #5D646E;
+  color: #5d646e;
   font-weight: normal;
   font-size: 1.4rem;
   cursor: default;
@@ -88,12 +88,12 @@ main .thank-you-section {
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
-  color: #5D646E;
+  color: #5d646e;
   font-size: 1.3rem;
 }
 
 .card-rating .active {
-  background-color: #7C8898 !important;
+  background-color: #7c8898 !important;
 }
 
 .card-rating span:hover {
@@ -150,19 +150,26 @@ main .thank-you-section {
   padding: 10px;
   margin-top: 8px;
   margin-bottom: 15px;
-  background-color: #272E38;
+  background-color: #272e38;
   color: #b96b34;
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.card-text .title, .subtitle {
+.card-text .title,
+.subtitle {
   display: flex;
   align-self: center;
 }
 
 .card-text .subtitle {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 340px) {
+  .card-text .subtitle {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
