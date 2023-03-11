@@ -18,11 +18,17 @@ function initRate() {
     var element = document.getElementById(currentRate);
     element.className = "active";
   }
+  // document.getElementById("rating-section").style.display = "flex";
+  // document.getElementById("thankyou-section").style.display = "none";
 }
 
 const submit = () => {
   let currentRate = localStorage.getItem("currentRate");
-  console.log("submit");
-  window.location = `./pages/result-page.html?${currentRate}`;
-  console.log(window.location)
+  document.getElementById("rating-section").style.display = "none";
+  document.getElementById("thank-you-section").style.display = "flex"; 
+  if (!!currentRate) {
+    localStorage.clear();
+    var element = document.getElementById("badget");
+    element.textContent = `You selected ${currentRate} out of 5`;
+  }
 };

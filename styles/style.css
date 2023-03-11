@@ -18,13 +18,18 @@ main {
   font-family: "Overpass", sans-serif;
 }
 
+main .thank-you-section {
+  display: none;
+}
+
 .card {
   width: 90%;
   min-width: 280px;
-  max-width: 300px;
+  max-width: 400px;
+  height: 350px;
   margin: 0 auto;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 15px;
+  padding: 25px;
   background: linear-gradient(35deg, #171E28, 50%, #1E252F);
 }
 
@@ -33,8 +38,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: #272E38;
   border-radius: 50%;
   padding: 10px;
@@ -52,15 +57,15 @@ main {
 
 .card-text h1 {
   color: white;
-  margin-bottom: 15px;
-  font-size: 2rem;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
   cursor: default;
 }
 
 .card-text p {
   color: #5D646E;
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: default;
 }
 
@@ -68,7 +73,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 .card .card-rating span {
@@ -131,8 +136,8 @@ main {
 
 .card-image .thank-you {
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 0 auto;
   background-image: url("../images/illustration-thank-you.svg");
   background-repeat: no-repeat;
@@ -159,5 +164,5 @@ main {
 
 .card-text .subtitle {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

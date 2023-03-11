@@ -21,16 +21,16 @@
   </head>
   <body onLoad="initRate()">
     <main>
-      <div class="card">
-        <span class="start-icon">&#9733;</span>
-        <div class="card-text">
-          <h1>How did we do?</h1>
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-        </div>
-        <form action="./pages/result-page.html" onsubmit="submit()">
+      <section id="rating-section" class="rating-section">
+        <div class="card">
+          <span class="start-icon">&#9733;</span>
+          <div class="card-text">
+            <h1>How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
           <div class="card-rating">
             <span id="1" onclick="rate(this)">1</span>
             <span id="2" onclick="rate(this)">2</span>
@@ -39,10 +39,25 @@
             <span id="5" onclick="rate(this)">5</span>
           </div>
           <div class="card-button">
-            <button type="submit">SUBMIT</button>
+            <button onclick="submit()">SUBMIT</button>
           </div>
-        </form>
-      </div>
+        </div>
+      </section>
+      <section id="thank-you-section" class="thank-you-section">
+        <div class="card">
+          <div class="card-image">
+            <span class="thank-you"></span>
+            <span id="badget" class="badget"></span>
+          </div>
+          <div class="card-text">
+            <h1 class="title">Thank you!</h1>
+            <p class="subtitle">
+              We appreciate you taking the time to give a rating. you ever need
+              more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/functions.js"></script>
   </body>

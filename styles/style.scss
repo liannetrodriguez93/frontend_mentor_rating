@@ -19,13 +19,18 @@ main {
     font-family: $fonts;
 }
 
+main .thank-you-section {
+    display: none;
+}
+
 .card {
     width: 90%;
     min-width: 280px;
-    max-width: 300px;
+    max-width: 400px;
+    height: 350px;
     margin: 0 auto;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 15px;
+    padding: 25px;
     background: linear-gradient(35deg, #171E28, 50%, #1E252F);
 }
 
@@ -43,7 +48,7 @@ main {
 
 .card-text h1{
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: $header-font-size;
     cursor: default;
 }
@@ -59,7 +64,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .card .card-rating span{
@@ -112,8 +117,8 @@ main {
 
 .card-image .thank-you {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto;
     background-image: url('../images/illustration-thank-you.svg');
     background-repeat: no-repeat;
@@ -140,5 +145,5 @@ main {
 
 .card-text .subtitle {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
