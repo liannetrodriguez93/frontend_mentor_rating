@@ -25,9 +25,8 @@ main .thank-you-section {
 
 .card {
   width: 90%;
-  min-width: 280px;
-  max-width: 400px;
-  height: 350px;
+  min-width: 335px;
+  max-width: 415px;
   margin: 0 auto;
   border-radius: 15px;
   padding: 25px;
@@ -35,7 +34,7 @@ main .thank-you-section {
 }
 
 .card .start-icon {
-  @include circule-centered();
+  @include circule-centered(45px);
   color: $orange;
   margin-bottom: 20px;
   cursor: default;
@@ -68,9 +67,9 @@ main .thank-you-section {
 }
 
 .card .card-rating span {
-  @include circule-centered(40px);
+  @include circule-centered(45px);
   color: #5d646e;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .card-rating .active {
@@ -150,6 +149,15 @@ main .thank-you-section {
 }
 
 @media (min-width: $breakpoint-mobile) {
+  .card .start-icon {
+    @include circule-centered();
+  }
+
+  .card .card-rating span {
+    @include circule-centered();
+    font-size: 1.3rem;
+  }
+
   .card-text .subtitle {
     font-size: 1.5rem;
   }
